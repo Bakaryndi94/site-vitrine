@@ -1,0 +1,82 @@
+/* === VARIABLES === */
+:root{
+  --bg1:#0b0d10;
+  --bg2:#121821;
+  --ink:#ffffff;
+  --muted:#cbd5e1;
+  --panel:rgba(255,255,255,.08);
+  --border:rgba(255,255,255,.20);
+  --radius:14px;
+  --shadow:0 12px 36px rgba(0,0,0,.35);
+  --maxw:1100px;
+}
+
+/* === RESET === */
+*{margin:0;padding:0;box-sizing:border-box}
+
+/* === BACKGROUND animé === */
+body{
+  background: linear-gradient(135deg, var(--bg1), var(--bg2), #1e3a8a, #0b0d10);
+  background-size: 400% 400%;
+  animation: gradientMove 12s ease infinite;
+  color: var(--ink);
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+}
+@keyframes gradientMove {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+
+
+/* === LAYOUT GÉNÉRAL === */
+.container{max-width:var(--maxw);margin-inline:auto;padding:0 20px}
+.section{padding:50px 0}
+h1{text-align:center;font-weight:700;margin:20px 0 10px}
+h2{text-align:center;font-weight:700;margin:40px 0 10px}
+h3{margin:8px 0 6px}
+.intro{
+  text-align:center;font-size:18px;color:var(--muted);
+  max-width:760px;margin:0 auto 28px;
+}
+
+/* === IMAGE HÉRO (voiture) === */
+.hero img{
+  width:30%;                 /* taille B = 30% */
+  display:block;
+  margin:40px auto 20px auto;
+  border-radius:16px;
+  box-shadow:0 12px 30px rgba(0,0,0,.45);
+}
+
+/* === GRID & CARDS === */
+.grid-3{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:16px;
+  margin-top:16px;
+}
+.card{
+  background:var(--panel);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:16px;
+  box-shadow:var(--shadow);
+  backdrop-filter:blur(4px) saturate(1.05);
+}
+.muted{color:var(--muted)}
+
+/* === TABLEAU === */
+.table-wrap{max-width:900px;margin:0 auto}
+table{width:100%;border-collapse:collapse;text-align:left}
+th,td{padding:12px 16px}
+thead th{
+  background:rgba(255,255,255,.10);
+  position:sticky;top:0;
+}
+
+/* === RESPONSIVE === */
+@media(max-width:900px){ .grid-3{grid-template-columns:1fr 1fr} }
+@media(max-width:600px){ .grid-3{grid-template-columns:1fr} }

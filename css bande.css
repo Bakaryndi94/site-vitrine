@@ -1,0 +1,50 @@
+hr.bande_site {
+    background-color: #14181b;
+    height: 110px;
+    margin:0;
+    width: 100%;
+    position: relative;
+    z-index: 2; 
+}
+
+img.logo {
+    width: 150px;
+    height: 70px;
+    position: absolute;
+    top: 10px;
+    left: 550px;
+    font-family: Arial, sans-serif;
+    z-index: 3;
+}
+
+.lien, .lien2, .lien3 {
+    position: absolute;
+    font-size: 15px;
+    text-decoration: underline;
+    font-family: Arial, sans-serif;
+    z-index: 3; 
+}
+
+.lien a, .lien2 a, .lien3 a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.lien a:hover, .lien2 a:hover, .lien3 a:hover {
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.lien { top: 45px; left: 800px; }
+.lien2 { top: 45px; left: 1120px; }
+.lien3 { top: 45px; left: 950px; }
+
+.nommarque {
+    font-size: 30px;
+    position: absolute;
+    color: aliceblue;
+    top: 5px;
+    left: 80px;
+    z-index: 3; 
+    font-family: Arial, sans-serif; 
+}

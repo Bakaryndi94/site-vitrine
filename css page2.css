@@ -1,0 +1,52 @@
+body {
+      font-family: Arial, sans-serif;
+      background-color: rgb(66, 83, 157);
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      color: #00008b;
+      padding: 20px;
+      background-color: #f0f0f0;
+    }
+
+    .voiture {
+      display: flex; /* permet d'aligner les éléments sur une ligne */
+      align-items: center; /* centre verticalement */
+      background-color: white;
+      width: 80%;
+      margin: 20px auto;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      gap: 30px; /* espace entre image et texte */
+    }
+
+    .voiture img {
+      width: 300px;
+      border-radius: 10px;
+    }
+
+    .details {
+      flex: 1; /* prend tout l’espace restant */
+    }
+
+    .details h2 {
+      color: darkred;
+      text-align: left;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    p {
+      font-weight: bold;
+      color: rgb(255, 255, 255);
+    }
+
+    
