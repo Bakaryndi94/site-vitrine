@@ -13,6 +13,5 @@ Site vitrine d'une marque fictive de voitures de sport électriques.
 ## Structure
 
 - `css/style.css` : le style des 3 pages
-- `images/` : `Logo.jpg`, `voiture.jpg`, `voiture1.png`, `voiture2.png`, `voiture3.png`
 
 Hébergé avec GitHub Pages.
