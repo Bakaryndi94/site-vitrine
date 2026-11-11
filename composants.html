@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Composants | Aston Marseillaise</title>
+  <meta name="description" content="Lieux de fabrication, composants et répartition du coût de revient.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Manrope:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="entete">
+    <div class="conteneur">
+      <a class="marque" href="index.html">
+        <img src="images/Logo.jpg" alt="">
+        Aston Marseillaise
+      </a>
+      <nav aria-label="Navigation principale">
+        <input type="checkbox" id="nav-case" aria-label="Ouvrir le menu">
+        <label class="nav-bouton" for="nav-case" aria-hidden="true">☰</label>
+        <ul class="menu">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="modeles.html">Modèles</a></li>
+        <li><a href="composants.html" aria-current="page">Composants</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="conteneur titre-page">
+      <h1>Fabrication et composants</h1>
+      <p>Où nos voitures sont assemblées, de quoi elles sont faites et ce que coûte leur fabrication.</p>
+    </div>
+    <div class="conteneur bandeau-img">
+      <img src="images/voiture1.png" alt="Voiture Aston Marseillaise">
+    </div>
+
+    <section class="rubrique" id="endroit">
+      <div class="conteneur">
+        <h2>Les lieux</h2>
+        <div class="grille">
+        <article class="carte"><h3>Usine d’assemblage</h3><p>Montage final : carrosserie, peinture, intérieur, calibrage électronique et tests de qualité.</p></article>
+        <article class="carte"><h3>Atelier carrosserie</h3><p>Formage aluminium, lignes robotisées de soudure, contrôle laser de la géométrie.</p></article>
+        <article class="carte"><h3>Centre d’essais</h3><p>Tests dynamiques : freinage, performance, comportement routier, bruit et vibrations.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="rubrique" id="composant">
+      <div class="conteneur">
+        <h2>Les composants</h2>
+        <div class="grille">
+        <article class="carte"><h3>Moteur et transmission</h3><p>L6 3.0 turbo, 450 ch, boîte automatique à 8 rapports, échappement actif (mode sport).</p></article>
+        <article class="carte"><h3>Châssis et freinage</h3><p>Suspension multi-bras, freins carbone-céramique, direction assistée variable.</p></article>
+        <article class="carte"><h3>Électronique et intérieur</h3><p>ADAS niveau 2, GPS à IA, tableau de bord numérique 12”, audio premium, cuir Nappa.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="rubrique fin" id="prix">
+      <div class="conteneur">
+        <h2>Le coût de fabrication</h2>
+        <p>Répartition approximative du coût de revient d’une voiture.</p>
+        <div class="tableau">
+          <table>
+            <thead><tr><th>Catégorie</th><th>Part</th><th>Coût (≈)</th></tr></thead>
+            <tbody>
+            <tr><td>Groupe motopropulseur</td><td class="part"><div class="barre"><i style="--p:35%"></i><span>35 %</span></div></td><td>8 750 €</td></tr>
+            <tr><td>Châssis et freins</td><td class="part"><div class="barre"><i style="--p:18%"></i><span>18 %</span></div></td><td>4 500 €</td></tr>
+            <tr><td>Électronique</td><td class="part"><div class="barre"><i style="--p:15%"></i><span>15 %</span></div></td><td>3 750 €</td></tr>
+            <tr><td>Intérieur</td><td class="part"><div class="barre"><i style="--p:10%"></i><span>10 %</span></div></td><td>2 500 €</td></tr>
+            <tr><td>Carrosserie et peinture</td><td class="part"><div class="barre"><i style="--p:14%"></i><span>14 %</span></div></td><td>3 500 €</td></tr>
+            <tr><td>Logistique</td><td class="part"><div class="barre"><i style="--p:8%"></i><span>8 %</span></div></td><td>2 000 €</td></tr>
+            </tbody>
+            <tfoot><tr><td>Total</td><td>100 %</td><td>25 000 €</td></tr></tfoot>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pied">
+    <div class="conteneur">
+      <span>Aston Marseillaise, fondée en octobre 2025</span>
+      <span>Marque fictive, projet de démonstration</span>
+    </div>
+  </footer>
+</body>
+</html>
